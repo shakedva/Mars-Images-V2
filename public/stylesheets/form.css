@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    margin: 1em;
+    background-image: url('https://i.imgur.com/lM8xKYY.jpeg');
+    min-height: 768px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 90%;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.myBtn {
+    background-color: coral;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 12px;
+}
+.failedMsg {
+    color: red;
+}
+
+.formText {
+    margin: 2em;
+}
+
+/*input#email {*/
+/*    background-image: url("/images/round_alternate_email_black_24dp.png");*/
+/*    background-repeat: no-repeat;*/
+/*    text-indent: 20px;*/
+/*    background-position: 10px;*/
+/*}*/

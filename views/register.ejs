@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheets/form.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="javascript/registerFunctions.js"></script>
+    <title>Exercise 4 - Internet Programming Course</title>
+</head>
+<body class="body">
+<div class="bg-img">
+    <form id="registerForm" action="/register/password" method="post" class="container col-11 col-lg-4">
+        <div class="formText">
+            <h3> Register </h3>
+            <div>
+                <label class="form-label"> First Name </label>
+                <input type="text" class="firstName form-control" name="firstName" id="firstName" pattern="[a-zA-Z]+"
+                       required
+                       oninvalid="this.setCustomValidity('Please enter letters only')"
+                       oninput="this.setCustomValidity('')"/>
+                <br/>
+            </div>
+            <div>
+                <label class="form-label"> Last Name </label>
+                <input type="text" class="lastName form-control" name="lastName" id="lastName" pattern="[a-zA-Z]+"
+                       required
+                       oninvalid="this.setCustomValidity('Please enter letters only')"
+                       oninput="this.setCustomValidity('')"/>
+                <br/>
+            </div>
+            <div>
+                <label class="form-label"> Email </label>
+                <input type="email" class="email form-control" name="email" id="email" required>
+                <div class="text-danger errormessage"></div>
+                <br/>
+            </div>
+            <br>
+            <input type="submit" class="myBtn" value="Submit">
+            <div>
+                <br/>
+                Already a member? <a href="/login">Log in</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+</html>
