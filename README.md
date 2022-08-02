@@ -9,16 +9,12 @@ This is an expansion to the [Mars Images Project](https://github.com/shakedva/Ma
 * Node.js Express
 * SQLite
 
-<h1>Shaked Vaknin, Noy Tal</h1>
-<p>Email: shakedva@edu.hac.ac.il </p>
-<p>Email: noyta@edu.hac.ac.il</p>
-
-<h1>Authors</h1>
+## Authors
 
 * [Shaked Vaknin](https://github.com/shakedva)
 * [Noy Tal Gelfand](https://github.com/noytal1)
 
-# Screenshots
+## Screenshots
 
 <img src="public/images/login.png" width="70%" height="70%">
 <img src="public/images/register.png" width="70%" height="70%">
